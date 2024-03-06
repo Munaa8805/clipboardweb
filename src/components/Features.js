@@ -3,9 +3,21 @@ import computerImage from "../assets/image-computer.png";
 
 const Features = () => {
   const items = [
-    { id: 1, name: "Quick Search", desc: " Easily search your snippets by content, category, web address, application, and more." },
-    { id: 1, name: "iCloud Sync", desc: "Instantly saves and syncs snippets across all your devices." },
-    { id: 1, name: "Completely History", desc: "Retrieve any snippets from the first moment you started using the app." },
+    {
+      id: 1,
+      name: "Quick Search",
+      desc: " Easily search your snippets by content, category, web address, application, and more.",
+    },
+    {
+      id: 1,
+      name: "iCloud Sync",
+      desc: "Instantly saves and syncs snippets across all your devices.",
+    },
+    {
+      id: 1,
+      name: "Completely History",
+      desc: "Retrieve any snippets from the first moment you started using the app.",
+    },
   ];
   return (
     <section id="section">
@@ -16,15 +28,25 @@ const Features = () => {
               src={computerImage}
               alt="computer"
               className="md:absolute top-0 right-[50%]"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
             />
           </div>
-          <div className="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16">
+          <div
+            className="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             {items.map((item) => {
               return (
                 <div key={item.id} className="">
-                  <h5 >
-                    {item.name}
-                  </h5>
+                  <h5>{item.name}</h5>
                   <p className="text-grayishBlue">{item.desc}</p>
                 </div>
               );

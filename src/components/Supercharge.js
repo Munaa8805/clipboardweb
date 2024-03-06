@@ -25,7 +25,14 @@ const Supercharge = () => {
     },
   ];
   return (
-    <div id="supercharge">
+    <div
+      id="supercharge"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <div className="section-container my-20 px-4">
         <h3>Supercharge your workflow</h3>
         <p className="p mb-16 text-xl leading-9 text-center text-grayishBlue">
@@ -34,7 +41,10 @@ const Supercharge = () => {
         <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
           {data.map((item) => {
             return (
-              <div className="flex flex-col items-center space-y-5" key={item.id}>
+              <div
+                className="flex flex-col items-center space-y-5"
+                key={item.id}
+              >
                 <img src={item.img} alt={item.name} className="mb-2" />
                 <h5>{item.name}</h5>
                 <p className="max-w-md text-grayishBlue">{item.desc}</p>

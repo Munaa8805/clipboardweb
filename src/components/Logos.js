@@ -15,7 +15,14 @@ const Logos = () => {
   ];
   return (
     <section id="references">
-      <div className="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0"
+      >
         {data.map((item) => {
           return <img key={item.id} src={item.img} alt={item.alt} />;
         })}
